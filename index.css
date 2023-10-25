@@ -2,6 +2,10 @@
   font-family: "RampartOne";
   src: url("./RampartOne-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "SquadRegular";
+  src: url("./SquadRegular.ttf") format("truetype");
+}
 /* шаблоны ====================================*/
 .dfCC {
   display: flex;
@@ -73,10 +77,11 @@
 .options {
   height: 40vh;
   width: 80%;
-  background-color: #fff;
+  /* background-color: #fff; */
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
 }
 
 .timer {
@@ -89,6 +94,7 @@
   background-color: #313131;
   position: absolute;
   border-radius: 50%;
+  box-shadow: inset 0px 0px 10px #ffffff;
 }
 .progress-ring {
   z-index: 2;
@@ -96,9 +102,10 @@
 .timer-cover {
   height: 80%;
   width: 80%;
-  background-color: #313131;
+  background-color: #404040;
   position: absolute;
   border-radius: 50%;
+  box-shadow: inset 10px -10px 25px #ffffff6e;
 }
 
 .progress-ring__circle {
@@ -109,6 +116,15 @@
 
 .timer__p {
   position: absolute;
-  color: antiquewhite;
+  color: #fff900;
+  /* font-weight: bold; */
   font-size: 50px;
+  /* text-shadow: 2px -2px 3px #ffffff38, -4px 2px 3px #000000e8; */
+  /* text-shadow: 0px 0px 2px #fff900, 0px 0px 6px #fff900, 0px 0px 15px #fff900; */
+  font-family: "SquadRegular";
+}
+
+.timer__audio {
+  position: fixed;
+  right: 0;
 }
