@@ -127,4 +127,5 @@
 .timer__audio {
   position: fixed;
   right: 0;
+  display: none;
 }
