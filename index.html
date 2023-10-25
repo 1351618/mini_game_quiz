@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="icon dfCC">VINSON ENTERTAINMENT</div>
+    </header>
+    <!-- ======================================= -->
+    <main class="main">
+      <!-- главная страница -->
+      <div class="main-page vh dfCC hide">
+        <button class="btn">РАУНД 1</button>
+        <button class="btn">РАУНД 2</button>
+        <button class="btn">РАУНД 2</button>
+      </div>
+      <!-- страница викторина -->
+      <div class="round-1 vh dfCC hide">
+        <button class="btn">РАУНД 888</button>
+        <button class="btn">РАУНД 2888</button>
+        <button class="btn">РАУНД 2888</button>
+      </div>
+
+      <div class="question vh dfCC">
+        <div class="question__img"></div>
+        <p class="question__p">что это такое</p>
+        <div class="options">
+          <button class="options-btn">ответ</button>
+          <button class="options-btn">ответ</button>
+          <button class="options-btn">ответ</button>
+          <button class="options-btn">ответ</button>
+        </div>
+        <div class="timer dfCC">
+          <div class="timer-substrate"></div>
+          <svg class="progress-ring" width="120" height="120">
+            <circle
+              class="progress-ring__circle"
+              stroke="#ff0000"
+              stroke-width="10"
+              cx="60"
+              cy="60"
+              r="52"
+              fill="transparent"
+            />
+          </svg>
+          <div class="timer-cover"></div>
+          <p class="timer__p">20</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ======================================= -->
+    <!-- ======================================= -->
+    <!-- ======================================= -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
