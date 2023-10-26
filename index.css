@@ -35,7 +35,9 @@
 }
 
 .body {
-  background-color: #262626;
+  background: linear-gradient(to bottom left, #262626, #515151, #262626);
+  box-shadow: inset 0px 0px 10px #000000, inset 0px 0px 50px #000000,
+    inset 0px 0px 100px #000000;
 }
 .header {
   width: 100%;
@@ -97,7 +99,13 @@
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
   gap: 1vw;
+}
+.options button {
+  height: 100%;
+  width: 100%;
 }
 
 .timer {

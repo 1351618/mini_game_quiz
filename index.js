@@ -1,38 +1,84 @@
 // >>>>>>>>>>>>>>>>>>
 // таймер
 const timer = document.querySelector(".timer__p");
+
 const timerSubstrate = document.querySelector(".timer-substrate");
+// нажатие на сам таймер
+const timerDiv = document.querySelector(".timer");
+timerDiv.addEventListener("click", () => {
+  startTimer();
+});
+
 // звук таймера
 const audio = document.getElementById("myAudio");
 
 const timerTime = 20; // таймер 20 сек
 
+// function startTimer() {
+//   //   console.log("запуск таймера");
+//   let i = timerTime;
+//   timer.style.textShadow =
+//     "0px 0px 2px #fff900, 0px 0px 6px #fff900, 0px 0px 15px #fff900";
+//   timer.textContent = `${i}`;
+
+//   const intervalId = setInterval(() => {
+//     --i;
+//     timerSubstrate.style.backgroundColor = "#00cf17";
+//     procentBarr(i);
+//     audio.play();
+//     timer.textContent = `${i.toString().length < 2 ? `0${i}` : i}`;
+
+//     // Остановка интервала при достижении 0
+//     if (i === 0) {
+//       clearInterval(intervalId);
+//       //   console.log("Таймер завершен");
+//       setTimeout(() => {
+//         timer.textContent = `${timerTime}`;
+//         setProgress(0);
+//         timerSubstrate.style.backgroundColor = "#313131";
+//         timer.style.textShadow = "none";
+//         audio.pause();
+//         audio.currentTime = 0;
+//       }, 700);
+//     }
+//   }, 1000);
+// }
+
+let intervalId;
+
 function startTimer() {
+  stopTimer();
   //   console.log("запуск таймера");
   let i = timerTime;
   timer.style.textShadow =
     "0px 0px 2px #fff900, 0px 0px 6px #fff900, 0px 0px 15px #fff900";
   timer.textContent = `${i}`;
 
-  const intervalId = setInterval(() => {
+  intervalId = setInterval(() => {
     --i;
     timerSubstrate.style.backgroundColor = "#00cf17";
     procentBarr(i);
     audio.play();
     timer.textContent = `${i.toString().length < 2 ? `0${i}` : i}`;
+
+    // Остановка интервала при достижении 0
     if (i === 0) {
-      clearInterval(intervalId); // Остановка интервала при достижении 0
-      //   console.log("Таймер завершен");
-      setTimeout(() => {
-        timer.textContent = `${timerTime}`;
-        setProgress(0);
-        timerSubstrate.style.backgroundColor = "#313131";
-        timer.style.textShadow = "none";
-        audio.pause();
-        audio.currentTime = 0;
-      }, 700);
+      stopTimer();
     }
   }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(intervalId);
+  //   console.log("Таймер завершен");
+  timer.style.textShadow = "none"; // Сброс тени перед остановкой
+  setTimeout(() => {
+    timer.textContent = `${timerTime}`;
+    setProgress(0);
+    timerSubstrate.style.backgroundColor = "#313131";
+    audio.pause();
+    audio.currentTime = 0;
+  }, 0);
 }
 
 // >>>>>>>>>>>>>>>>>>
@@ -59,7 +105,7 @@ function procentBarr(i) {
 }
 
 // =======================================================
-// обработчик клавиатуры
+// todo обработчик клавиатуры
 document.addEventListener("keydown", (event) => {
   //   console.log(event.key);
   if (event.key === " ") {
@@ -86,6 +132,7 @@ function pageSelection(page) {
 }
 // pageSelection("main-page");
 pageSelection("question");
+// pageSelection("round-1");
 
 // ======================================================
 // кнопка домой
@@ -112,3 +159,34 @@ btnRounds.forEach((button) => {
     }
   });
 });
+// ================================================
+// todo получение JSON
+// Путь к файлу JSON
+const filePath = "./src/json/round-1/categories_round_1.json";
+
+// Загрузка файла
+fetch(filePath)
+  .then((response) => response.json())
+  .then((jsonData) => {
+    // Вывод данных в консоль
+    // console.log(jsonData);
+    createRoundContent(jsonData);
+  })
+  .catch((error) => {
+    console.error("Ошибка загрузки файла:", error);
+  });
+
+// ================================================
+// todo страница первого раунда
+// функция для создания контента
+function createRoundContent(jsonData) {
+  jsonData = JSON.stringify(jsonData, null, 2);
+  //   const names = jsonData[0];
+  console.log(jsonData);
+  console.log(jsonData[0]);
+
+  const roundContentDiv = document.createElement("div");
+  roundContentDiv.textContent = jsonData;
+
+  round_1_Page.appendChild(roundContentDiv);
+}
