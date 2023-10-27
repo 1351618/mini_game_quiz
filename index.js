@@ -193,7 +193,7 @@ function createRoundContent(jsonData) {
       clickExerciseButton(exerciseButton, val);
       // действие при наведении
       exerciseButton.addEventListener("mouseenter", () => {
-        soundGuidance(guidance, 300);
+        soundGuidance(guidance, 100);
       });
 
       categoryDiv.appendChild(exerciseButton);
