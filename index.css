@@ -170,7 +170,7 @@
   gap: 1vw;
   margin-bottom: 6vh;
 }
-.options button {
+.options-btn {
   height: 65%;
   width: 80%;
   cursor: pointer;
@@ -180,6 +180,14 @@
   background-color: unset;
   border-radius: 25px;
   box-shadow: inset 5px 3px 11px;
+}
+
+.options-btn:hover {
+  background-color: #fff27e54;
+  border: 2px solid #efff00;
+  box-shadow: inset 0px 0px 30px #fff27e, 0px 0px 8px #fff27e,
+    0px 0px 16px #fff27e, 0px 0px 32px #fff27e;
+  color: black;
 }
 
 .timer {
