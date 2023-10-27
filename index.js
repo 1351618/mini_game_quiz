@@ -130,8 +130,8 @@ function pageSelection(page) {
   round_3_Page.classList.toggle("hide", showPage !== "round-3");
   question_Page.classList.toggle("hide", showPage !== "question");
 }
-// pageSelection("main-page");
-pageSelection("question");
+pageSelection("main-page");
+// pageSelection("question");
 // pageSelection("round-1");
 
 // ======================================================
@@ -170,23 +170,125 @@ fetch(filePath)
   .then((jsonData) => {
     // Вывод данных в консоль
     // console.log(jsonData);
-    createRoundContent(jsonData);
+    handlerJsondata(jsonData);
   })
   .catch((error) => {
     console.error("Ошибка загрузки файла:", error);
   });
 
+//   >>>>>>>>>>>>>>>>>>>>>>>>>
+function handlerJsondata(jsonData) {
+  jsonData = JSON.stringify(jsonData, null, 2);
+  jsonData = JSON.parse(jsonData);
+  jsonData = jsonData[0].categories;
+  // console.log(jsonData, "..................");
+  createRoundContent(jsonData);
+}
+
 // ================================================
 // todo страница первого раунда
 // функция для создания контента
 function createRoundContent(jsonData) {
-  jsonData = JSON.stringify(jsonData, null, 2);
-  //   const names = jsonData[0];
-  console.log(jsonData);
-  console.log(jsonData[0]);
+  // console.log(jsonData);
+  const jsonDataOBJ = { ...jsonData };
+  // console.log(jsonDataOBJ);
+  jsonData.forEach((val) => {
+    // console.log(val.name);
+    const name = val.name;
+    // console.log(val.difficulties);
+    const difficulties = val.difficulties;
 
-  const roundContentDiv = document.createElement("div");
-  roundContentDiv.textContent = jsonData;
+    const categoryDiv = document.createElement("div");
+    categoryDiv.classList.add("category");
 
-  round_1_Page.appendChild(roundContentDiv);
+    const categoryDivP = document.createElement("p");
+    categoryDivP.textContent = name;
+    categoryDiv.appendChild(categoryDivP);
+
+    difficulties.forEach((val) => {
+      // console.log(val.difficultiesName);
+      // console.log(val);
+      const exerciseButton = document.createElement("button");
+      exerciseButton.classList.add("exerciseBtn");
+      exerciseButton.textContent = val.difficultiesName;
+      clickExerciseButton(exerciseButton, val);
+
+      categoryDiv.appendChild(exerciseButton);
+    });
+
+    round_1_Page.appendChild(categoryDiv);
+  });
 }
+
+function clickExerciseButton(exerciseButton, val) {
+  exerciseButton.addEventListener("click", (event) => {
+    pageSelection("question");
+
+    const questionImgDiv = document.querySelector(".question__img");
+    // console.log(val);
+    // Находим тег <img> внутри questionImgDiv
+    const imgElement = questionImgDiv.querySelector("img");
+    if (imgElement) {
+      imgElement.remove(); // Удаляем существующий тег <img>
+    }
+
+    const questionImg = document.createElement("img");
+    questionImg.src = val.questionImg;
+
+    questionImgDiv.appendChild(questionImg);
+    // заполняем ответы
+    // console.log(val.answerOptions);
+    const optionsDiv = document.querySelector(".options");
+    // Находим все кнопки внутри optionsDiv
+    const buttons = optionsDiv.querySelectorAll("button");
+
+    buttons.forEach((button) => {
+      button.remove(); // Удаляем каждую найденную кнопку
+    });
+    // добавляем новые
+    val.answerOptions.forEach((val) => {
+      // console.log(val.answer);
+      const answerBtn = document.createElement("button");
+      answerBtn.classList.add("options-btn");
+      answerBtn.textContent = val.answer;
+      answerBtn.addEventListener("click", () => {
+        // console.log(val);
+        actionsToRespond(val, answerBtn);
+      });
+
+      optionsDiv.appendChild(answerBtn);
+    });
+  });
+}
+
+// ================================================
+// todo действия при выборе ответа
+function actionsToRespond(val, answerBtn) {
+  // console.log(answerBtn);
+
+  console.log(val, ">>>>>>>>>>>>>>>>>>");
+  if (val.correctAnswer) {
+    answerBtn.style.backgroundColor = "#00ff00";
+  } else {
+    answerBtn.style.backgroundColor = "#595959";
+  }
+  // показ изображения
+  const showImag = document.createElement("img");
+  showImag.classList.add("showImag");
+  showImag.src = val.answerFoto;
+  question_Page.appendChild(showImag);
+  setTimeout(() => {
+    showImag.remove();
+  }, 1500);
+
+  // отключаем курсор после нажатия
+  answerBtn.style.cursor = "not-allowed";
+  answerBtn.disabled = true;
+}
+
+// ================================================
+// todo кеопка возврата к раунду 1
+const returnRound_1_Btn = document.querySelector(".return-round-1-btn");
+returnRound_1_Btn.addEventListener("click", () => {
+  pageSelection("round-1");
+});

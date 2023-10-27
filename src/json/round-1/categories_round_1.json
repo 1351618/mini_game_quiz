@@ -3,19 +3,78 @@
     "categories": [
       {
         "name": "Категория 1",
-        "difficulties": ["Сложность 1", "Сложность 2", "Сложность 3"]
+        "difficulties": [
+          {
+            "difficultiesName": "Сложность 1 1",
+            "questionImg": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg",
+            "answerOptions": [
+              {
+                "answer": "человек",
+                "correctAnswer": false,
+                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+              },
+              {
+                "answer": "чел",
+                "correctAnswer": false,
+                "answerFoto": "адрес фото 2"
+              },
+              {
+                "answer": "жопошник",
+                "correctAnswer": true,
+                "answerFoto": "адрес фото 3"
+              },
+              {
+                "answer": "руко-чел",
+                "correctAnswer": false,
+                "answerFoto": "адрес фото 4"
+              }
+            ]
+          },
+          {
+            "difficultiesName": "Сложность 1 2",
+            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
+            "answerOptions": [
+              { "answer": "дуэт", "correctAnswer": false },
+              { "answer": "котомяу", "correctAnswer": true },
+              { "answer": "караоке", "correctAnswer": false },
+              { "answer": "сингл", "correctAnswer": false }
+            ]
+          },
+          {
+            "difficultiesName": "Сложность 1 3",
+            "questionImg": "https://pic.rutube.ru/video/96/e9/96e9cac6c5dc064e95aadcfdf77f697b.jpg",
+            "answerOptions": [
+              { "answer": "человек", "correctAnswer": false },
+              { "answer": "чел", "correctAnswer": false },
+              { "answer": "жопошник", "correctAnswer": true },
+              { "answer": "морж", "correctAnswer": false }
+            ]
+          }
+        ]
       },
       {
         "name": "Категория 2",
-        "difficulties": ["Сложность 1", "Сложность 2", "Сложность 3"]
+        "difficulties": [
+          { "difficultiesName": "Сложность 2 1" },
+          { "difficultiesName": "Сложность 2 2" },
+          { "difficultiesName": "Сложность 2 3" }
+        ]
       },
       {
         "name": "Категория 3",
-        "difficulties": ["Сложность 1", "Сложность 2", "Сложность 3"]
+        "difficulties": [
+          { "difficultiesName": "Сложность 3 1" },
+          { "difficultiesName": "Сложность 3 2" },
+          { "difficultiesName": "Сложность 3 3" }
+        ]
       },
       {
         "name": "Категория 4",
-        "difficulties": ["Сложность 1", "Сложность 2", "Сложность 3"]
+        "difficulties": [
+          { "difficultiesName": "Сложность 4 1" },
+          { "difficultiesName": "Сложность 4 2" },
+          { "difficultiesName": "Сложность 4 3" }
+        ]
       }
     ]
   }
