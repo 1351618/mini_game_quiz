@@ -19,6 +19,9 @@ const btnHome = document.querySelector(".btn-home"); // кнопка домой
 const btnRounds = document.querySelectorAll(".main-page button"); // кнопка раундов
 
 const returnRound_1_Btn = document.querySelector(".return-round-1-btn"); // кнопка возврата к раунду 1
+
+// звуковые эффекты
+const guidance = document.getElementById("guidance-01");
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 // todo переменные
@@ -188,6 +191,10 @@ function createRoundContent(jsonData) {
       exerciseButton.classList.add("exerciseBtn");
       exerciseButton.textContent = val.difficultiesName;
       clickExerciseButton(exerciseButton, val);
+      // действие при наведении
+      exerciseButton.addEventListener("mouseenter", () => {
+        soundGuidance(guidance, 300);
+      });
 
       categoryDiv.appendChild(exerciseButton);
     });
@@ -268,3 +275,15 @@ function actionsToRespond(val, answerBtn) {
 returnRound_1_Btn.addEventListener("click", () => {
   pageSelection("round-1");
 });
+
+// =================================================
+
+// soundGuidance(guidance, 300);
+// todo функция для воспроизведения звука
+function soundGuidance(soundTag, duration) {
+  soundTag.play();
+  setTimeout(() => {
+    soundTag.pause();
+    soundTag.load();
+  }, duration);
+}

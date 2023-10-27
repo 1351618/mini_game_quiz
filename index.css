@@ -111,6 +111,14 @@
   border-radius: 8px;
   box-shadow: 4px 3px 5px, -2px -1px 5px #8b8686;
   cursor: pointer;
+  background-color: #c7c2c7;
+}
+
+.exerciseBtn:hover {
+  background-color: #f3f340;
+  box-shadow: 4px 3px 5px, -2px -1px 5px #8b8686, 0px 0px 10px #f3f340,
+    0px 0px 20px #f3f340, 0px 0px 40px #f3f340;
+  border: 2px solid #ffff99;
 }
 /* ////////////////////////////////////////////// */
 .question {
