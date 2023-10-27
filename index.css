@@ -1,10 +1,10 @@
 @font-face {
   font-family: "RampartOne";
-  src: url("./RampartOne-Regular.ttf") format("truetype");
+  src: url("./src/fonts/RampartOne-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "SquadRegular";
-  src: url("./SquadRegular.ttf") format("truetype");
+  src: url("./src/fonts/SquadRegular.ttf") format("truetype");
 }
 /* шаблоны ====================================*/
 .dfCC {
@@ -62,7 +62,9 @@
   background-color: #222;
   height: 40px;
   width: 40px;
-  box-shadow: inset 0px 0px 17px #ffffff4d, 0px 0px 3px #ffffff9e;
+  box-shadow: inset 0px 0px 17px #ffffff4d, 0px 0px 3px #ffffff9e, 4px 3px 5px,
+    -2px -1px 5px #8b8686;
+  margin-right: 1vw;
 }
 
 .main-page {
@@ -99,11 +101,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 8px;
+  box-shadow: 4px 3px 5px, -2px -1px 5px #8b8686;
 }
 
 .exerciseBtn {
   height: 60px;
   width: 100%;
+  border-radius: 8px;
+  box-shadow: 4px 3px 5px, -2px -1px 5px #8b8686;
+  cursor: pointer;
 }
 /* ////////////////////////////////////////////// */
 .question {
@@ -113,23 +120,31 @@
 }
 .return-round-1-btn {
   position: absolute;
-  left: 0;
+  left: 1vw;
   border-radius: 50%;
   padding: 3px;
   background-color: #222;
   height: 40px;
   width: 40px;
-  box-shadow: inset 0px 0px 17px #ffffff4d, 0px 0px 3px #ffffff9e;
+  box-shadow: inset 0px 0px 17px #ffffff4d, 0px 0px 3px #ffffff9e, 4px 3px 5px,
+    -2px -1px 5px #8b8686;
 }
 
 .question__img {
   margin-top: 10vh;
   height: 30%;
-  width: 80%;
-  background-color: #fff;
+  width: auto;
+  /* background-color: #fff; */
+  background-color: unset;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 4px 3px 5px, -2px -1px 5px #8b8686;
 }
+
+.question__img img {
+  max-height: 120%;
+}
+
 .question__p {
   font-family: "RampartOne";
   font-size: 4vh;
@@ -148,12 +163,15 @@
   margin-bottom: 6vh;
 }
 .options button {
-  height: 100%;
-  width: 100%;
+  height: 65%;
+  width: 80%;
   cursor: pointer;
   font-family: "RampartOne";
   font-size: 5vh;
-  color: #2c2c2c;
+  color: #f7ff8b;
+  background-color: unset;
+  border-radius: 25px;
+  box-shadow: inset 5px 3px 11px;
 }
 
 .timer {
@@ -166,7 +184,7 @@
   background-color: #313131;
   position: absolute;
   border-radius: 50%;
-  box-shadow: inset 0px 0px 10px #ffffff;
+  box-shadow: inset 2px 2px 10px #ffffff, 4px 3px 5px, -2px -1px 5px #8b8686;
 }
 .progress-ring {
   z-index: 2;

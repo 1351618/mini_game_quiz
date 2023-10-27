@@ -1,50 +1,36 @@
-// >>>>>>>>>>>>>>>>>>
-// таймер
-const timer = document.querySelector(".timer__p");
+// todo Пути и подключение
+const filePath = "./src/json/round-1/categories_round_1.json"; // Путь к файлу JSON
 
+// todo получение и создание - тегов html
+
+const timer = document.querySelector(".timer__p"); // таймер
 const timerSubstrate = document.querySelector(".timer-substrate");
+const timerDiv = document.querySelector(".timer"); // нажатие на сам таймер
+const audio = document.getElementById("myAudio"); // звук таймера
+const circleTimer = document.querySelector(".progress-ring__circle"); // таймер кольцо прогресса
+// * настройка отображения страниц
+const main_Page = document.querySelector(".main-page");
+const round_1_Page = document.querySelector(".round-1");
+const round_2_Page = document.querySelector(".round-2");
+const round_3_Page = document.querySelector(".round-3");
+const question_Page = document.querySelector(".question");
+
+const btnHome = document.querySelector(".btn-home"); // кнопка домой
+const btnRounds = document.querySelectorAll(".main-page button"); // кнопка раундов
+
+const returnRound_1_Btn = document.querySelector(".return-round-1-btn"); // кнопка возврата к раунду 1
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// todo переменные
+
+const timerTime = 20; // таймер 20 сек
+let intervalId;
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 // нажатие на сам таймер
-const timerDiv = document.querySelector(".timer");
 timerDiv.addEventListener("click", () => {
   startTimer();
 });
-
-// звук таймера
-const audio = document.getElementById("myAudio");
-
-const timerTime = 20; // таймер 20 сек
-
-// function startTimer() {
-//   //   console.log("запуск таймера");
-//   let i = timerTime;
-//   timer.style.textShadow =
-//     "0px 0px 2px #fff900, 0px 0px 6px #fff900, 0px 0px 15px #fff900";
-//   timer.textContent = `${i}`;
-
-//   const intervalId = setInterval(() => {
-//     --i;
-//     timerSubstrate.style.backgroundColor = "#00cf17";
-//     procentBarr(i);
-//     audio.play();
-//     timer.textContent = `${i.toString().length < 2 ? `0${i}` : i}`;
-
-//     // Остановка интервала при достижении 0
-//     if (i === 0) {
-//       clearInterval(intervalId);
-//       //   console.log("Таймер завершен");
-//       setTimeout(() => {
-//         timer.textContent = `${timerTime}`;
-//         setProgress(0);
-//         timerSubstrate.style.backgroundColor = "#313131";
-//         timer.style.textShadow = "none";
-//         audio.pause();
-//         audio.currentTime = 0;
-//       }, 700);
-//     }
-//   }, 1000);
-// }
-
-let intervalId;
 
 function startTimer() {
   stopTimer();
@@ -83,7 +69,6 @@ function stopTimer() {
 
 // >>>>>>>>>>>>>>>>>>
 // таймер кольцо прогресса
-const circleTimer = document.querySelector(".progress-ring__circle");
 const radiusCircleTimer = circleTimer.r.baseVal.value;
 const circumference = 2 * Math.PI * radiusCircleTimer;
 // console.log(circumference);
@@ -116,11 +101,6 @@ document.addEventListener("keydown", (event) => {
 
 // =======================================================
 // todo настройка отображения страниц
-const main_Page = document.querySelector(".main-page");
-const round_1_Page = document.querySelector(".round-1");
-const round_2_Page = document.querySelector(".round-2");
-const round_3_Page = document.querySelector(".round-3");
-const question_Page = document.querySelector(".question");
 
 function pageSelection(page) {
   showPage = page;
@@ -136,14 +116,12 @@ pageSelection("main-page");
 
 // ======================================================
 // кнопка домой
-const btnHome = document.querySelector(".btn-home");
 
 btnHome.addEventListener("click", () => {
   pageSelection("main-page");
 });
 
 // кнопка раундов
-const btnRounds = document.querySelectorAll(".main-page button");
 
 btnRounds.forEach((button) => {
   button.addEventListener("click", () => {
@@ -161,9 +139,6 @@ btnRounds.forEach((button) => {
 });
 // ================================================
 // todo получение JSON
-// Путь к файлу JSON
-const filePath = "./src/json/round-1/categories_round_1.json";
-
 // Загрузка файла
 fetch(filePath)
   .then((response) => response.json())
@@ -186,6 +161,7 @@ function handlerJsondata(jsonData) {
 }
 
 // ================================================
+
 // todo страница первого раунда
 // функция для создания контента
 function createRoundContent(jsonData) {
@@ -287,8 +263,8 @@ function actionsToRespond(val, answerBtn) {
 }
 
 // ================================================
-// todo кеопка возврата к раунду 1
-const returnRound_1_Btn = document.querySelector(".return-round-1-btn");
+// todo кнопка возврата к раунду 1
+
 returnRound_1_Btn.addEventListener("click", () => {
   pageSelection("round-1");
 });
