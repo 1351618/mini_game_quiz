@@ -6,16 +6,39 @@
     <title>quiz</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="icon" href="./src/image/favicon.png" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body class="body">
     <header class="header">
       <div class="icon dfCC">VINSON ENTERTAINMENT</div>
-      <div class="navigation">
-        <button class="btn-home dfCC cp">
-          <img src="./src/image/home_icon.png" alt="home_icon.png" />
-        </button>
-      </div>
     </header>
+    <!-- ======================================= -->
+    <nav class="navigation">
+      <button class="btn-home dfCC cp">
+        <img src="./src/image/home_icon.png" alt="home_icon.png" />
+      </button>
+      <button class="return-round-1-btn dfCC cp hide">
+        <img
+          src="./src/image/return-round.png"
+          alt="return-round-1.png"
+          height="32px"
+        />
+      </button>
+      <button class="return-round-2-btn dfCC cp hide">
+        <img
+          src="./src/image/return-round.png"
+          alt="return-round-2.png"
+          height="32px"
+        />
+      </button>
+      <button class="return-round-3-btn dfCC cp hide">
+        <img
+          src="./src/image/return-round.png"
+          alt="return-round-3.png"
+          height="32px"
+        />
+      </button>
+    </nav>
     <!-- ======================================= -->
     <main class="main">
       <!-- главная страница -->
@@ -27,28 +50,20 @@
       <!-- страница викторина раунд 1-->
       <div class="round-1 vh dfCC hide"></div>
       <!-- страница викторина раунд 2-->
-      <div class="round-2 vh dfCC hide">
-        <button class="btn">РАУНД 22222</button>
-        <button class="btn">РАУНД 22222</button>
-        <button class="btn">РАУНД 22222</button>
-      </div>
+      <div class="round-2 vh dfCC hide"></div>
       <!-- страница викторина раунд 3-->
       <div class="round-3 vh dfCC hide">
         <button class="btn">РАУНД 333333</button>
         <button class="btn">РАУНД 333333</button>
         <button class="btn">РАУНД 333333</button>
       </div>
-      <!-- страница с вопросами -->
+      <!-- страница с вопросами шаблон 1-->
       <div class="question vh dfCC hide">
-        <button class="return-round-1-btn dfCC cp">
-          <img
-            src="./src/image/return-round-1.png"
-            alt="return-round-1.png"
-            height="32px"
-          />
-        </button>
         <div class="question__img dfCC"></div>
-        <p class="question__p">что это такое?</p>
+        <div class="question-div-p">
+          <p class="question__p">что это такое?</p>
+        </div>
+
         <div class="options">
           <button class="options-btn">ответ</button>
           <button class="options-btn">ответ</button>
@@ -78,6 +93,17 @@
             ></audio>
             <div class="audioplayer"></div>
           </div>
+        </div>
+      </div>
+      <!-- страница с вопросами шаблон 2-->
+      <div class="question-two vh dfCC hide">
+        <div class="question-two-p-div">
+          <!-- <p class="question-two-p-div__p">123</p> -->
+        </div>
+        <div class="question-two-img-div"></div>
+        <div class="question-two-options-div">
+          <button class="question-two-options-div__Btn">1</button>
+          <button class="question-two-options-div__Btn">2</button>
         </div>
       </div>
     </main>
