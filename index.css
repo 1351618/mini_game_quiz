@@ -332,6 +332,10 @@
   box-shadow: 0px 0px 100px #000, 0px 0px 200px #000, 0px 0px 300px #000;
 }
 
+.showVideo {
+  position: absolute;
+}
+
 /* ============= раунд 2 =========================== */
 .round-2 {
   display: flex;

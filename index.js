@@ -254,7 +254,7 @@ function createRoundContent(jsonData) {
 
 function clickExerciseButton(exerciseButton, val) {
   exerciseButton.addEventListener("click", (event) => {
-    console.log(exerciseButton, val, "{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{");
+    // console.log(exerciseButton, val, "{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{");
     templateOne(val, returnRound_1_Btn); //? надо переделать на этот
     // !
     // !
@@ -449,7 +449,7 @@ function templateTwo(jsonDataForBtn, tegBtnReturn) {
 
 // первый шаблон
 function templateOne(jsonDataForBtn, tegBtnReturn) {
-  console.log(jsonDataForBtn, "template---1");
+  // console.log(jsonDataForBtn, "template---1");
   pageSelection("question"); // отображение блока шаблоном вопроса
   tegBtnReturn.classList.remove("hide"); // отображение кнопки возврата
 
@@ -459,7 +459,7 @@ function templateOne(jsonDataForBtn, tegBtnReturn) {
     questionOneImg.remove(); // Удаляем существующий тег <img>
   }
   questionOneImg = document.createElement("img");
-  console.log(jsonDataForBtn.questionImg);
+  // console.log(jsonDataForBtn.questionImg);
   questionOneImg.src = jsonDataForBtn.questionImg;
 
   questionImgDiv.appendChild(questionOneImg);
@@ -485,7 +485,7 @@ function templateOne(jsonDataForBtn, tegBtnReturn) {
     });
   }
 
-  console.log(jsonDataForBtn.answerOptions);
+  // console.log(jsonDataForBtn.answerOptions);
   jsonDataForBtn.answerOptions.forEach((val, index) => {
     let questionOneOptions_btn = document.createElement("button");
     // questionOneOptions_btn.classList.add(`indexBtn-${index}`);
@@ -504,7 +504,7 @@ function templateOne(jsonDataForBtn, tegBtnReturn) {
 // ================================================
 // todo действия при выборе ответа
 function actionsToRespond(val, answerBtn, index) {
-  console.log(val, answerBtn, index);
+  // console.log(val, answerBtn, index);
 
   // console.log(val, ">>>>>>>>>>>>>>>>>>");
   if (val.correctAnswer) {
@@ -513,8 +513,37 @@ function actionsToRespond(val, answerBtn, index) {
     answerBtn.style.backgroundColor = "#595959";
   }
   // // показ изображения
-  console.log(val);
-  // if (val){}
+
+  // console.log(
+  //   val.answerVideo ? (val.answerVideo, "есть видео") : showingPictures(val)
+  // );
+  val.answerVideo ? showingVideo(val) : showingPictures(val);
+
+  // // отключаем курсор после нажатия
+  answerBtn.style.cursor = "not-allowed";
+  answerBtn.disabled = true;
+  answerBtn.style.pointerEvents = "none";
+}
+
+// показ видео или картинки
+function showingVideo(val) {
+  console.log(val.answerVideo, "показ видео");
+  const showVideo = document.createElement("video");
+  showVideo.classList.add("showVideo");
+  showVideo.src = val.answerVideo; // Путь к видеофайлу
+  showVideo.controls = true; // Показывать элементы управления видео
+  showVideo.autoplay = true; // Автоматическое воспроизведение видео
+
+  // Обработчик события окончания видео
+  showVideo.addEventListener("ended", function () {
+    // Удаление элемента видео из DOM
+    showVideo.parentNode.removeChild(showVideo);
+  });
+
+  question_Page.appendChild(showVideo);
+}
+function showingPictures(val) {
+  console.log("показ картинки");
   const showImag = document.createElement("img");
   showImag.classList.add("showImag");
   showImag.src = val.answerFoto;
@@ -522,9 +551,4 @@ function actionsToRespond(val, answerBtn, index) {
   setTimeout(() => {
     showImag.remove();
   }, 5000);
-
-  // // отключаем курсор после нажатия
-  answerBtn.style.cursor = "not-allowed";
-  answerBtn.disabled = true;
-  answerBtn.style.pointerEvents = "none";
 }
