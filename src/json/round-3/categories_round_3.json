@@ -1,350 +1,82 @@
 [
   {
-    "categories": [
-      {
-        "name": "Шляпа на шляпе",
-        "difficulties": [
-          {
-            "difficultiesName": "100",
-            "questionImg": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "5 шляп",
-                "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "3 шляпы",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "Вши",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 3"
-              },
-              {
-                "answer": "Распределяющая шляпа",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "200",
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "Что на голове у Александра?",
-            "answerOptions": [
-              {
-                "answer": "Панамка Грибочка",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "Каска Эсимус",
-                "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "Тюремная феска",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "Начальная стадия облысения",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "300",
-            "questionImg": "https://pic.rutube.ru/video/96/e9/96e9cac6c5dc064e95aadcfdf77f697b.jpg",
-            "questionText": "Что на голове у Артема и Никиты?",
-            "answerOptions": [
-              {
-                "answer": "Колпаки звездочетов",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "Кокошники",
-                "correctAnswer": true,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "Дорожные конусы",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 3"
-              },
-              {
-                "answer": "Пилотки из газеты",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Не баян, а классика",
-        "difficulties": [
-          {
-            "difficultiesName": "100",
-            "questionImg": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "человек",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "жопошник",
-                "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
-              },
-              {
-                "answer": "руко-чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "200",
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "дуэт",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "котомяу",
-                "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "караоке",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "сингл",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "300",
-            "questionImg": "https://pic.rutube.ru/video/96/e9/96e9cac6c5dc064e95aadcfdf77f697b.jpg",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "человек",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "жопошник",
-                "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
-              },
-              {
-                "answer": "руко-чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Creative team",
-        "difficulties": [
-          {
-            "difficultiesName": "100",
-            "questionImg": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "человек",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "жопошник",
-                "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
-              },
-              {
-                "answer": "руко-чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "200",
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "дуэт",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "котомяу",
-                "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "караоке",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "сингл",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "300",
-            "questionImg": "https://pic.rutube.ru/video/96/e9/96e9cac6c5dc064e95aadcfdf77f697b.jpg",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "человек",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "жопошник",
-                "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
-              },
-              {
-                "answer": "руко-чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Тема бетона раскрыта",
-        "difficulties": [
-          {
-            "difficultiesName": "100",
-            "questionImg": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "человек",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "жопошник",
-                "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
-              },
-              {
-                "answer": "руко-чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "200",
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "дуэт",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "котомяу",
-                "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "караоке",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "сингл",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "300",
-            "questionImg": "https://pic.rutube.ru/video/96/e9/96e9cac6c5dc064e95aadcfdf77f697b.jpg",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "человек",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "жопошник",
-                "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
-              },
-              {
-                "answer": "руко-чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "sticName": "стикер 1",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 2",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 3",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 4",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 5",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 6",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 7",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 8",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 9",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 10",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 1",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 2",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 3",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 4",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 5",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 6",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 7",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 8",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 9",
+    "sticImg": ""
+  },
+  {
+    "sticName": "стикер 10",
+    "sticImg": ""
   }
 ]

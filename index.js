@@ -1,6 +1,7 @@
 // todo Пути и подключение
 const filePath_1 = "./src/json/round-1/categories_round_1.json"; // Путь к файлу JSON
 const filePath_2 = "./src/json/round-2/categories_round_2.json"; // Путь к файлу JSON
+const filePath_3 = "./src/json/round-3/categories_round_3.json"; // Путь к файлу JSON
 
 // todo получение и создание - тегов html
 
@@ -256,64 +257,6 @@ function clickExerciseButton(exerciseButton, val) {
   exerciseButton.addEventListener("click", (event) => {
     // console.log(exerciseButton, val, "{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{");
     templateOne(val, returnRound_1_Btn); //? надо переделать на этот
-    // !
-    // !
-    // !
-    // !
-    // !
-
-    // pageSelection("question");
-    // returnRound_1_Btn.classList.remove("hide");
-
-    // // const questionImgDiv = document.querySelector(".question__img");
-    // // console.log(val);
-    // // !-- эту функцию перебрать и удалить
-    // // Находим тег <img> внутри questionImgDiv
-    // const imgElement = questionImgDiv.querySelector("img");
-    // if (imgElement) {
-    //   imgElement.remove(); // Удаляем существующий тег <img>
-    // }
-
-    // const questionImg = document.createElement("img");
-    // questionImg.src = val.questionImg;
-    // questionImgDiv.appendChild(questionImg);
-
-    // //
-    // // const questionDivP = document.querySelector(".question-div-p");
-    // // Находим тег <p> внутри questionImgDiv
-    // const pElement = questionDivP.querySelector("p");
-    // if (pElement) {
-    //   pElement.remove(); // Удаляем существующий тег <p>
-    // }
-
-    // const questionP = document.createElement("p");
-    // questionP.classList.add("question__p");
-    // questionP.textContent = val.questionText;
-
-    // questionDivP.appendChild(questionP);
-
-    // // заполняем ответы
-    // // console.log(val.answerOptions);
-    // const optionsDiv = document.querySelector(".options");
-    // // Находим все кнопки внутри optionsDiv
-    // const buttons = optionsDiv.querySelectorAll("button");
-
-    // buttons.forEach((button) => {
-    //   button.remove(); // Удаляем каждую найденную кнопку
-    // });
-    // // добавляем новые
-    // val.answerOptions.forEach((val) => {
-    //   // console.log(val.answer);
-    //   const answerBtn = document.createElement("button");
-    //   answerBtn.classList.add("options-btn");
-    //   answerBtn.textContent = val.answer;
-    //   answerBtn.addEventListener("click", () => {
-    //     // console.log(val);
-    //     actionsToRespond(val, answerBtn);
-    //   });
-
-    //   optionsDiv.appendChild(answerBtn);
-    // });
   });
 }
 
@@ -551,4 +494,53 @@ function showingPictures(val) {
   setTimeout(() => {
     showImag.remove();
   }, 5000);
+}
+
+// todo раунд 3
+// получение json
+fetch(filePath_3)
+  .then((response) => response.json())
+  .then((jesonData) => {
+    renderPageRound_3(jesonData);
+  })
+  .catch((error) => {
+    console.error("Ошибка загрузки файла:", error);
+  });
+
+// рендеринг на страницу 3й раунд
+function renderPageRound_3(jesonDataRound3) {
+  // console.log(jesonDataRound3);
+
+  jesonDataRound3.forEach((val) => {
+    // console.log(val);
+    let round3PageStic = document.createElement("button");
+    round3PageStic.textContent = val.sticName;
+    round3PageStic.style.backgroundColor = randomColor();
+
+    // обработчик событий
+    round3PageStic.addEventListener("click", () => {
+      hendleClickStik(val, round3PageStic);
+    });
+
+    // добавляем стикер на страницу
+    round_3_Page.appendChild(round3PageStic);
+  });
+}
+
+function hendleClickStik(val, round3PageStic) {
+  round3PageStic.style.backgroundImage =
+    "linear-gradient(56deg, #434242 0%, #040404 100%)";
+  round3PageStic.style.pointerEvents = "none";
+  round3PageStic.style.color = "#535353";
+  console.log(val);
+}
+
+function randomColor() {
+  //* rtn --  random-Two-Num
+  const rtn = () => {
+    let result = Math.floor(Math.random() * 90) + 10;
+    return result;
+  };
+
+  return `#${rtn()}${rtn()}${rtn()}`;
 }
