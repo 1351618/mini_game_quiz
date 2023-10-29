@@ -24,6 +24,9 @@ const returnRound_1_Btn = document.querySelector(".return-round-1-btn"); // кн
 const returnRound_2_Btn = document.querySelector(".return-round-2-btn"); // кнопка возврата к раунду 2
 const returnRound_3_Btn = document.querySelector(".return-round-3-btn"); // кнопка возврата к раунду 3
 
+// страница с вопросами шаблон 1
+const questionOneOptionsDiv = document.querySelector(".options");
+
 // страница с вопросами шаблон 2
 const questionTwoPDiv = document.querySelector(".question-two-p-div");
 const questionTwoImgDiv = document.querySelector(".question-two-img-div");
@@ -235,6 +238,7 @@ function createRoundContent(jsonData) {
       exerciseButton.classList.add("exerciseBtn");
       exerciseButton.textContent = val.difficultiesName;
       // обработчики кликов на каждую кнопку
+
       clickExerciseButton(exerciseButton, val);
       // действие при наведении
       exerciseButton.addEventListener("mouseenter", () => {
@@ -250,84 +254,67 @@ function createRoundContent(jsonData) {
 
 function clickExerciseButton(exerciseButton, val) {
   exerciseButton.addEventListener("click", (event) => {
-    pageSelection("question");
-    returnRound_1_Btn.classList.remove("hide");
+    console.log(exerciseButton, val, "{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{");
+    templateOne(val, returnRound_1_Btn); //? надо переделать на этот
+    // !
+    // !
+    // !
+    // !
+    // !
 
-    // const questionImgDiv = document.querySelector(".question__img");
-    // console.log(val);
+    // pageSelection("question");
+    // returnRound_1_Btn.classList.remove("hide");
 
-    // Находим тег <img> внутри questionImgDiv
-    const imgElement = questionImgDiv.querySelector("img");
-    if (imgElement) {
-      imgElement.remove(); // Удаляем существующий тег <img>
-    }
+    // // const questionImgDiv = document.querySelector(".question__img");
+    // // console.log(val);
+    // // !-- эту функцию перебрать и удалить
+    // // Находим тег <img> внутри questionImgDiv
+    // const imgElement = questionImgDiv.querySelector("img");
+    // if (imgElement) {
+    //   imgElement.remove(); // Удаляем существующий тег <img>
+    // }
 
-    const questionImg = document.createElement("img");
-    questionImg.src = val.questionImg;
-    questionImgDiv.appendChild(questionImg);
+    // const questionImg = document.createElement("img");
+    // questionImg.src = val.questionImg;
+    // questionImgDiv.appendChild(questionImg);
 
-    //
-    // const questionDivP = document.querySelector(".question-div-p");
-    // Находим тег <p> внутри questionImgDiv
-    const pElement = questionDivP.querySelector("p");
-    if (pElement) {
-      pElement.remove(); // Удаляем существующий тег <p>
-    }
+    // //
+    // // const questionDivP = document.querySelector(".question-div-p");
+    // // Находим тег <p> внутри questionImgDiv
+    // const pElement = questionDivP.querySelector("p");
+    // if (pElement) {
+    //   pElement.remove(); // Удаляем существующий тег <p>
+    // }
 
-    const questionP = document.createElement("p");
-    questionP.classList.add("question__p");
-    questionP.textContent = val.questionText;
+    // const questionP = document.createElement("p");
+    // questionP.classList.add("question__p");
+    // questionP.textContent = val.questionText;
 
-    questionDivP.appendChild(questionP);
+    // questionDivP.appendChild(questionP);
 
-    // заполняем ответы
-    // console.log(val.answerOptions);
-    const optionsDiv = document.querySelector(".options");
-    // Находим все кнопки внутри optionsDiv
-    const buttons = optionsDiv.querySelectorAll("button");
+    // // заполняем ответы
+    // // console.log(val.answerOptions);
+    // const optionsDiv = document.querySelector(".options");
+    // // Находим все кнопки внутри optionsDiv
+    // const buttons = optionsDiv.querySelectorAll("button");
 
-    buttons.forEach((button) => {
-      button.remove(); // Удаляем каждую найденную кнопку
-    });
-    // добавляем новые
-    val.answerOptions.forEach((val) => {
-      // console.log(val.answer);
-      const answerBtn = document.createElement("button");
-      answerBtn.classList.add("options-btn");
-      answerBtn.textContent = val.answer;
-      answerBtn.addEventListener("click", () => {
-        // console.log(val);
-        actionsToRespond(val, answerBtn);
-      });
+    // buttons.forEach((button) => {
+    //   button.remove(); // Удаляем каждую найденную кнопку
+    // });
+    // // добавляем новые
+    // val.answerOptions.forEach((val) => {
+    //   // console.log(val.answer);
+    //   const answerBtn = document.createElement("button");
+    //   answerBtn.classList.add("options-btn");
+    //   answerBtn.textContent = val.answer;
+    //   answerBtn.addEventListener("click", () => {
+    //     // console.log(val);
+    //     actionsToRespond(val, answerBtn);
+    //   });
 
-      optionsDiv.appendChild(answerBtn);
-    });
+    //   optionsDiv.appendChild(answerBtn);
+    // });
   });
-}
-
-// ================================================
-// todo действия при выборе ответа
-function actionsToRespond(val, answerBtn) {
-  // console.log(answerBtn);
-
-  // console.log(val, ">>>>>>>>>>>>>>>>>>");
-  if (val.correctAnswer) {
-    answerBtn.style.backgroundColor = "#00ff00";
-  } else {
-    answerBtn.style.backgroundColor = "#595959";
-  }
-  // показ изображения
-  const showImag = document.createElement("img");
-  showImag.classList.add("showImag");
-  showImag.src = val.answerFoto;
-  question_Page.appendChild(showImag);
-  setTimeout(() => {
-    showImag.remove();
-  }, 1500);
-
-  // отключаем курсор после нажатия
-  answerBtn.style.cursor = "not-allowed";
-  answerBtn.disabled = true;
 }
 
 // =================================================
@@ -392,18 +379,18 @@ function renderPageRound_2(jesonDataRound2) {
   });
 }
 
-// ! функция для обработки кнопок
+// ! функция для выбора шаблона вопросов
 function onClickBtnRound2(jsonDataForBtn) {
   jsonDataForBtn.template === 2
-    ? templateTwo(jsonDataForBtn)
-    : templateOne(jsonDataForBtn);
+    ? templateTwo(jsonDataForBtn, returnRound_2_Btn)
+    : templateOne(jsonDataForBtn, returnRound_2_Btn);
 }
 
 // второй шаблон
-function templateTwo(jsonDataForBtn) {
+function templateTwo(jsonDataForBtn, tegBtnReturn) {
   console.log("template---2");
-  pageSelection("question-two");
-  returnRound_2_Btn.classList.remove("hide");
+  pageSelection("question-two"); // отображение блока с шаблоном вопросов
+  tegBtnReturn.classList.remove("hide"); // отображение кнопки возврата
 
   // удаляем вопрос для перезаписи тег-<p> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   let questionTwoPDiv_P = questionTwoPDiv.querySelector(
@@ -434,24 +421,26 @@ function templateTwo(jsonDataForBtn) {
 
   questionTwoImgDiv.appendChild(questionTwoImgDiv_img);
 
-  // удаляем тарые вопросы   для перезаписи теги-<button> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-  let questionTwoOptionsDiv_btn = questionTwoOptionsDiv.querySelectorAll(
-    ".question-two-options-div__Btn"
-  );
+  // удаляем старые вопросы   для перезаписи теги-<button> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  // let questionTwoOptionsDiv_btn = questionTwoOptionsDiv.querySelectorAll(
+  //   ".question-two-options-div__Btn"
+  // );
+  let questionTwoOptionsDiv_btn =
+    questionTwoOptionsDiv.querySelectorAll("button");
   if (questionTwoOptionsDiv_btn.length > 0) {
     questionTwoOptionsDiv_btn.forEach((val) => {
       val.remove();
     });
   }
   // console.log(jsonDataForBtn.answerOptions);
-  jsonDataForBtn.answerOptions.forEach((val) => {
-    questionTwoOptionsDiv_btn = document.createElement("button");
-    questionTwoOptionsDiv_btn.classList.add("question-two-options-div__Btn");
-    // console.log(val.answer, ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+  jsonDataForBtn.answerOptions.forEach((val, index) => {
+    let questionTwoOptionsDiv_btn = document.createElement("button");
+    // questionTwoOptionsDiv_btn.classList.add("question-two-options-div__Btn");
     questionTwoOptionsDiv_btn.textContent = val.answer;
     questionTwoOptionsDiv_btn.addEventListener("click", () => {
       // ! действия по нажатию на кнопку - функция
-      console.log(val);
+      // console.log(val);
+      actionsToRespond(val, questionTwoOptionsDiv_btn, index);
     });
 
     questionTwoOptionsDiv.appendChild(questionTwoOptionsDiv_btn);
@@ -459,8 +448,83 @@ function templateTwo(jsonDataForBtn) {
 }
 
 // первый шаблон
-function templateOne(jsonDataForBtn) {
-  console.log("template---1");
-  pageSelection("question");
-  returnRound_2_Btn.classList.remove("hide");
+function templateOne(jsonDataForBtn, tegBtnReturn) {
+  console.log(jsonDataForBtn, "template---1");
+  pageSelection("question"); // отображение блока шаблоном вопроса
+  tegBtnReturn.classList.remove("hide"); // отображение кнопки возврата
+
+  // находим тег с картинокй для удаления
+  let questionOneImg = questionImgDiv.querySelector("img");
+  if (questionOneImg) {
+    questionOneImg.remove(); // Удаляем существующий тег <img>
+  }
+  questionOneImg = document.createElement("img");
+  console.log(jsonDataForBtn.questionImg);
+  questionOneImg.src = jsonDataForBtn.questionImg;
+
+  questionImgDiv.appendChild(questionOneImg);
+
+  // находим тег <p> для удаления
+  let questionOneP = questionDivP.querySelector("p");
+
+  if (questionOneP) {
+    questionOneP.remove();
+  }
+
+  questionOneP = document.createElement("p");
+  questionOneP.textContent = jsonDataForBtn.questionText;
+
+  questionDivP.appendChild(questionOneP);
+
+  // удаляем старые вопросы   для перезаписи теги-<button> >>>>>>>>>>>>>>>>>>>
+  let questionOneOptions_btn = questionOneOptionsDiv.querySelectorAll("button");
+
+  if (questionOneOptions_btn.length > 0) {
+    questionOneOptions_btn.forEach((val) => {
+      val.remove();
+    });
+  }
+
+  console.log(jsonDataForBtn.answerOptions);
+  jsonDataForBtn.answerOptions.forEach((val, index) => {
+    let questionOneOptions_btn = document.createElement("button");
+    // questionOneOptions_btn.classList.add(`indexBtn-${index}`);
+    questionOneOptions_btn.textContent = val.answer;
+    // обработчик кнопок
+    questionOneOptions_btn.addEventListener("click", () => {
+      // ! действия по нажатию на кнопку - функция
+      // console.log(val);
+      actionsToRespond(val, questionOneOptions_btn, index);
+    });
+
+    questionOneOptionsDiv.appendChild(questionOneOptions_btn);
+  });
+}
+
+// ================================================
+// todo действия при выборе ответа
+function actionsToRespond(val, answerBtn, index) {
+  console.log(val, answerBtn, index);
+
+  // console.log(val, ">>>>>>>>>>>>>>>>>>");
+  if (val.correctAnswer) {
+    answerBtn.style.backgroundColor = "#00ff00";
+  } else {
+    answerBtn.style.backgroundColor = "#595959";
+  }
+  // // показ изображения
+  console.log(val);
+  // if (val){}
+  const showImag = document.createElement("img");
+  showImag.classList.add("showImag");
+  showImag.src = val.answerFoto;
+  question_Page.appendChild(showImag);
+  setTimeout(() => {
+    showImag.remove();
+  }, 5000);
+
+  // // отключаем курсор после нажатия
+  answerBtn.style.cursor = "not-allowed";
+  answerBtn.disabled = true;
+  answerBtn.style.pointerEvents = "none";
 }

@@ -206,24 +206,21 @@
   transition: transform 0.3s ease;
 }
 
-/* .exerciseBtn:hover {
-  background-color: #f3f340;
-  box-shadow: 4px 3px 5px, -2px -1px 5px #8b8686, 0px 0px 10px #f3f340,
-    0px 0px 20px #f3f340, 0px 0px 40px #f3f340;
-  border: 2px solid #ffff99;
-} */
 /* ////////////////////////////////////////////// */
 .question {
   flex-direction: column;
   justify-content: space-around;
-  gap: 3vh;
+  gap: 1vh;
 }
 
 .question__img {
-  margin-top: 10vh;
-  height: 30%;
+  margin-top: 5vh;
+  min-width: 100px;
+  min-height: 100px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
-  /* background-color: #fff; */
   background-color: unset;
   border-radius: 8px;
   overflow: hidden;
@@ -231,19 +228,19 @@
 }
 
 .question__img img {
-  max-height: 120%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-.question__p {
-  /* font-family: "RampartOne"; */
-  font-size: 6vh;
+.question-div-p p {
+  font-size: 2em;
   color: #ffffff;
   font-weight: bold;
+  text-align: center;
 }
 .options {
   height: 40vh;
-  width: 80%;
-  /* background-color: #fff; */
+  width: 90%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
@@ -252,17 +249,20 @@
   gap: 1vw;
   margin-bottom: 6vh;
 }
-.options-btn {
-  height: 65%;
-  width: 80%;
+
+.question-two button,
+.options button {
+  height: 100%;
+  width: 100%;
   cursor: pointer;
   /* font-family: "RampartOne"; */
-  font-size: 5vh;
+  font-size: 2em;
   color: #000000;
   background-color: #c9c9c9;
+  white-space: pre-wrap;
 }
-
-.options-btn:hover {
+.question-two button:hover,
+.options button:hover {
   background-color: #c9c9c9;
   border: 2px solid #dddddd;
   box-shadow: inset 0px 0px 30px #c9c9c9, 0px 0px 8px #c9c9c9,
@@ -319,11 +319,14 @@
 .showImag {
   position: absolute;
   z-index: 10;
-  height: auto;
-  width: 85%;
-  background-color: thistle;
+  background-color: #515151;
   display: flex;
   justify-content: center;
+  min-width: 100px;
+  min-height: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   align-items: center;
   flex-direction: column;
   box-shadow: 0px 0px 100px #000, 0px 0px 200px #000, 0px 0px 300px #000;

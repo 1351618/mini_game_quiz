@@ -79,7 +79,7 @@
             ]
           },
           {
-            "difficultiesName": "200",
+            "difficultiesName": "400",
             "template": 2,
             "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
             "questionText": "чукали пап",
@@ -115,8 +115,8 @@
           {
             "difficultiesName": "100",
             "template": 1,
-            "questionImg": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg",
-            "questionText": "Что на голове у Владимира?",
+            "questionImg": "./photo/",
+            "questionText": "100 Что на голове у Владимира?",
             "answerOptions": [
               {
                 "answer": "человек",
@@ -144,7 +144,7 @@
             "difficultiesName": "200",
             "template": 1,
             "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "Что на голове у Владимира?",
+            "questionText": "200 Что на голове у Владимира?",
             "answerOptions": [
               {
                 "answer": "дуэт",
@@ -172,7 +172,7 @@
             "difficultiesName": "300",
             "template": 1,
             "questionImg": "https://pic.rutube.ru/video/96/e9/96e9cac6c5dc064e95aadcfdf77f697b.jpg",
-            "questionText": "Что на голове у Владимира?",
+            "questionText": "300 Что на голове у Владимира?",
             "answerOptions": [
               {
                 "answer": "человек",
@@ -200,7 +200,7 @@
             "difficultiesName": "400",
             "template": 1,
             "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "Что на голове у Владимира?",
+            "questionText": "400 Что на голове у Владимира?",
             "answerOptions": [
               {
                 "answer": "дуэт",
