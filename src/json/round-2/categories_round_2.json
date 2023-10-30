@@ -13,11 +13,13 @@
               {
                 "answer": "Маирбек и Грибочек",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Odno 100_answ.png"
               },
               {
                 "answer": "Рандомный чеченец с Эдуардом",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
@@ -31,14 +33,15 @@
               {
                 "answer": "Грузчик с КокоМикс + беженец из Ливии",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Саша + Денис",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Odno 150_answ.png"
               }
-              
             ]
           },
           {
@@ -50,11 +53,13 @@
               {
                 "answer": "Кто-то из Диснея + кто-то из Пиксара",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Андрей и Никита",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Odno 200_answ.png"
               }
             ]
@@ -68,11 +73,13 @@
               {
                 "answer": "Шутки про 47 хромосом оскорбительны и неуместны",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Дима + Вова",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Odno 300_answ.png"
               }
             ]
@@ -92,21 +99,25 @@
               {
                 "answer": "Три недели ухаживала за мёртвой черепахой, пока та не завоняла",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Потерялась в лесу и бродила 3 часа",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Каталась верхом на свинье",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Выступает за возобновление крепостного права",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Detec 100_answ.png"
               }
             ]
@@ -120,21 +131,25 @@
               {
                 "answer": "Шарит за 3D",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Имеет образование учителя географии",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Имеет сан священника",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Detec 150_answ.png"
               },
               {
                 "answer": "Пишет стихи",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
@@ -148,21 +163,25 @@
               {
                 "answer": "КМС по жиму штанги лёжа",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Чеканила мяч 222 раза",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Упал кусок кирпича на голову",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Слепила двухметровый фаллос из глины",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Detec 200_answ.png"
               }
             ]
@@ -176,21 +195,25 @@
               {
                 "answer": "Мечтает о костюме ку-клукс-клана",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Detec 300_answ.png"
               },
               {
                 "answer": "Побывала в нескольких сектах",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Чуть не сбила пьяного батюшку",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "КМС по боксу",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
@@ -209,21 +232,25 @@
               {
                 "answer": "Душила цыплят в детстве",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Съела трёхлитровую кастрюлю оливье на спор",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Зашла в казино через окно и проиграла все деньги",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Пришла на работу в колготках, забыв надеть юбку",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Poisk_ 100_answ.png"
               }
             ]
@@ -237,21 +264,25 @@
               {
                 "answer": "Каталась на мотоцикле на скорости 260 км/ч",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Верит, что инопланетяне похищали её и проводили над ней опыты",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Poisk_ 150_answ.png"
               },
               {
                 "answer": "Убила чужую собаку голыми руками",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "В 16 лет залезла по строительному крану в мужское общежитие на 8й этаж",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
@@ -265,21 +296,25 @@
               {
                 "answer": "Играл в рок-группе и работал продавцом в музыкальном магазине",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Проектировал машину с двигателем на воде, вдохновившись знаниями об элитролизе",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
                 "answer": "Выпал из окна, в попытке поймать голубя",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Poisk_ 200_answ.png"
               },
               {
                 "answer": "Изучил Basic в 10 лет",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
@@ -293,21 +328,25 @@
               {
                 "answer": "ответ",
                 "correctAnswer": false,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Poisk_ 300_answ.png"
               },
               {
                 "answer": "ответ",
                 "correctAnswer": true,
+                "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/"
               },
               {
                 "answer": "ответ",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/"
               },
               {
                 "answer": "ответ",
                 "correctAnswer": false,
+                "timeShow": 1000,
                 "answerFoto": "./src/json/round-2/photo/"
               }
             ]

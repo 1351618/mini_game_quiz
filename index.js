@@ -37,6 +37,9 @@ const questionTwoOptionsDiv = document.querySelector(
 
 // звуковые эффекты
 const guidance = document.getElementById("guidance-01");
+const rightAnswer = document.getElementById("right-answer");
+const wrongAnswer = document.getElementById("wrong-answer");
+
 // рендеринг элементов
 const questionImgDiv = document.querySelector(".question__img");
 const questionDivP = document.querySelector(".question-div-p");
@@ -333,7 +336,7 @@ function onClickBtnRound2(jsonDataForBtn) {
 
 // второй шаблон
 function templateTwo(jsonDataForBtn, tegBtnReturn) {
-  console.log("template---2");
+  // console.log("template---2");
   pageSelection("question-two"); // отображение блока с шаблоном вопросов
   tegBtnReturn.classList.remove("hide"); // отображение кнопки возврата
 
@@ -449,19 +452,21 @@ function templateOne(jsonDataForBtn, tegBtnReturn) {
 // ================================================
 // todo действия при выборе ответа
 function actionsToRespond(val, answerBtn, index) {
+  // console.log("todo действия при выборе ответа");
   // console.log(val, answerBtn, index);
 
   // console.log(val, ">>>>>>>>>>>>>>>>>>");
   if (val.correctAnswer) {
     answerBtn.style.backgroundColor = "#00ff00";
+    console.log("звук при ответе", "rightAnswer");
+    // soundGuidance(воспроизводимый тег , 300);
+    soundGuidance(rightAnswer, 2000); //!========= звук при ответе ===============
   } else {
     answerBtn.style.backgroundColor = "#595959";
-  }
-  // // показ изображения
 
-  // console.log(
-  //   val.answerVideo ? (val.answerVideo, "есть видео") : showingPictures(val)
-  // );
+    soundGuidance(wrongAnswer, 1000); //!========= звук при ответе ===============
+  }
+
   val.answerVideo ? showingVideo(val) : showingPictures(val);
 
   // // отключаем курсор после нажатия
@@ -488,14 +493,22 @@ function showingVideo(val) {
   question_Page.appendChild(showVideo);
 }
 function showingPictures(val) {
-  console.log("показ картинки");
-  const showImag = document.createElement("img");
-  showImag.classList.add("showImag");
-  showImag.src = val.answerFoto;
-  question_Page.appendChild(showImag);
+  console.log("показ картинки......", val.timeShow);
+
+  showWindAnsverDiv.classList.remove("hide");
+  let showWindAnsverImg = showWindAnsverDiv.querySelector("img");
+
+  if (showWindAnsverImg) {
+    showWindAnsverImg.remove();
+  }
+
+  showWindAnsverImg = document.createElement("img");
+  showWindAnsverImg.src = val.answerFoto;
+
+  showWindAnsverDiv.appendChild(showWindAnsverImg);
   setTimeout(() => {
-    showImag.remove();
-  }, 1000);
+    showWindAnsverDiv.classList.add("hide");
+  }, val.timeShow);
 }
 
 // todo раунд 3
