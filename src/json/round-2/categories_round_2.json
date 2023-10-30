@@ -7,102 +7,73 @@
           {
             "difficultiesName": "100",
             "template": 2,
-            "questionImg": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg",
-            "questionText": "трам пам пам ",
+            "questionImg": "./src/json/round-2/photo/Odno 100_ques.png",
+            "questionText": "Кого скрестили на фото?",
             "answerOptions": [
               {
-                "answer": "5 шляп",
+                "answer": "Маирбек и Грибочек",
                 "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/Odno 100_answ.png"
               },
               {
-                "answer": "3 шляпы",
+                "answer": "Рандомный чеченец с Эдуардом",
                 "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               }
+            ]
+          },
+          {
+            "difficultiesName": "150",
+            "template": 2,
+            "questionImg": "./src/json/round-2/photo/Odno 150_ques.png",
+            "questionText": "Кого скрестили на фото?",
+            "answerOptions": [
+              {
+                "answer": "Грузчик с КокоМикс + беженец из Ливии",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
+              },
+              {
+                "answer": "Саша + Денис",
+                "correctAnswer": true,
+                "answerFoto": "./src/json/round-2/photo/Odno 150_answ.png"
+              }
+              
             ]
           },
           {
             "difficultiesName": "200",
             "template": 2,
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "опачки",
+            "questionImg": "./src/json/round-2/photo/Odno 200_ques.png",
+            "questionText": "Кого скрестили на фото?",
             "answerOptions": [
               {
-                "answer": "Панамка Грибочка",
+                "answer": "Кто-то из Диснея + кто-то из Пиксара",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "Каска Эсимус",
+                "answer": "Андрей и Никита",
                 "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "Тюремная феска",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "Начальная стадия облысения",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/Odno 200_answ.png"
               }
             ]
           },
           {
             "difficultiesName": "300",
             "template": 2,
-            "questionImg": "https://pic.rutube.ru/video/96/e9/96e9cac6c5dc064e95aadcfdf77f697b.jpg",
-            "questionText": "ляяяяя",
+            "questionImg": "./src/json/round-2/photo/Odno 300_ques.png",
+            "questionText": "Кого скрестили на фото?",
             "answerOptions": [
               {
-                "answer": "Колпаки звездочетов",
+                "answer": "Шутки про 47 хромосом оскорбительны и неуместны",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "Кокошники",
+                "answer": "Дима + Вова",
                 "correctAnswer": true,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "Дорожные конусы",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 3"
-              },
-              {
-                "answer": "Пилотки из газеты",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "400",
-            "template": 2,
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "чукали пап",
-            "answerOptions": [
-              {
-                "answer": "дуэт",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "котомяу",
-                "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "караоке",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "сингл",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/Odno 300_answ.png"
               }
             ]
           }
@@ -115,112 +86,112 @@
           {
             "difficultiesName": "100",
             "template": 1,
-            "questionImg": "./photo/",
-            "questionText": "100 Что на голове у Владимира?",
+            "questionImg": "./src/json/round-2/photo/Detec 100_ques.png",
+            "questionText": "Какой факт о Даше является ложным?",
             "answerOptions": [
               {
-                "answer": "человек",
+                "answer": "Три недели ухаживала за мёртвой черепахой, пока та не завоняла",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "чел",
+                "answer": "Потерялась в лесу и бродила 3 часа",
                 "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "жопошник",
+                "answer": "Каталась верхом на свинье",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
+              },
+              {
+                "answer": "Выступает за возобновление крепостного права",
                 "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
+                "answerFoto": "./src/json/round-2/photo/Detec 100_answ.png"
+              }
+            ]
+          },
+          {
+            "difficultiesName": "150",
+            "template": 1,
+            "questionImg": "./src/json/round-2/photo/Detec 150_ques.png",
+            "questionText": "Какой факт о Косте является ложным?",
+            "answerOptions": [
+              {
+                "answer": "Шарит за 3D",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "руко-чел",
+                "answer": "Имеет образование учителя географии",
                 "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
+                "answerFoto": "./src/json/round-2/photo/error.png"
+              },
+              {
+                "answer": "Имеет сан священника",
+                "correctAnswer": true,
+                "answerFoto": "./src/json/round-2/photo/Detec 150_answ.png"
+              },
+              {
+                "answer": "Пишет стихи",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
           },
           {
             "difficultiesName": "200",
             "template": 1,
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "200 Что на голове у Владимира?",
+            "questionImg": "./src/json/round-2/photo/Detec 200_ques.png",
+            "questionText": "Какой факт о Юле является ложным??",
             "answerOptions": [
               {
-                "answer": "дуэт",
+                "answer": "КМС по жиму штанги лёжа",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "котомяу",
+                "answer": "Чеканила мяч 222 раза",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
+              },
+              {
+                "answer": "Упал кусок кирпича на голову",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
+              },
+              {
+                "answer": "Слепила двухметровый фаллос из глины",
                 "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "караоке",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "сингл",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/Detec 200_answ.png"
               }
             ]
           },
           {
             "difficultiesName": "300",
             "template": 1,
-            "questionImg": "https://pic.rutube.ru/video/96/e9/96e9cac6c5dc064e95aadcfdf77f697b.jpg",
-            "questionText": "300 Что на голове у Владимира?",
+            "questionImg": "./src/json/round-2/photo/Detec 300_ques.png",
+            "questionText": "Какой факт о Юле является ложным?",
             "answerOptions": [
               {
-                "answer": "человек",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "жопошник",
+                "answer": "Мечтает о костюме ку-клукс-клана",
                 "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
+                "answerFoto": "./src/json/round-2/photo/Detec 300_answ.png"
               },
               {
-                "answer": "руко-чел",
+                "answer": "Побывала в нескольких сектах",
                 "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "400",
-            "template": 1,
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "400 Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "дуэт",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "котомяу",
-                "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answer": "Чуть не сбила пьяного батюшку",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "караоке",
+                "answer": "КМС по боксу",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "сингл",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
           }
@@ -232,112 +203,112 @@
           {
             "difficultiesName": "100",
             "template": 1,
-            "questionImg": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg",
-            "questionText": "вопросс 100",
+            "questionImg": "./src/json/round-2/photo/Poisk_ 100_ques.png",
+            "questionText": "Какой факт о Любе является ложным?",
             "answerOptions": [
               {
-                "answer": "человек",
+                "answer": "Душила цыплят в детстве",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "чел",
+                "answer": "Съела трёхлитровую кастрюлю оливье на спор",
                 "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "жопошник",
+                "answer": "Зашла в казино через окно и проиграла все деньги",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
+              },
+              {
+                "answer": "Пришла на работу в колготках, забыв надеть юбку",
                 "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
+                "answerFoto": "./src/json/round-2/photo/Poisk_ 100_answ.png"
+              }
+            ]
+          },
+          {
+            "difficultiesName": "150",
+            "template": 1,
+            "questionImg": "./src/json/round-2/photo/Poisk_ 150_ques.png",
+            "questionText": "Какой факт об Ульяне является ложным?",
+            "answerOptions": [
+              {
+                "answer": "Каталась на мотоцикле на скорости 260 км/ч",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "руко-чел",
+                "answer": "Верит, что инопланетяне похищали её и проводили над ней опыты",
+                "correctAnswer": true,
+                "answerFoto": "./src/json/round-2/photo/Poisk_ 150_answ.png"
+              },
+              {
+                "answer": "Убила чужую собаку голыми руками",
                 "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
+                "answerFoto": "./src/json/round-2/photo/error.png"
+              },
+              {
+                "answer": "В 16 лет залезла по строительному крану в мужское общежитие на 8й этаж",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
           },
           {
             "difficultiesName": "200",
             "template": 1,
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "вопрос 200",
+            "questionImg": "./src/json/round-2/photo/Poisk_ 200_ques.png",
+            "questionText": "Какой факт о Лёше является ложным?",
             "answerOptions": [
               {
-                "answer": "дуэт",
+                "answer": "Играл в рок-группе и работал продавцом в музыкальном магазине",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "котомяу",
+                "answer": "Проектировал машину с двигателем на воде, вдохновившись знаниями об элитролизе",
+                "correctAnswer": false,
+                "answerFoto": "./src/json/round-2/photo/error.png"
+              },
+              {
+                "answer": "Выпал из окна, в попытке поймать голубя",
                 "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/Poisk_ 200_answ.png"
               },
               {
-                "answer": "караоке",
+                "answer": "Изучил Basic в 10 лет",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "сингл",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
           },
           {
             "difficultiesName": "300",
             "template": 1,
-            "questionImg": "https://pic.rutube.ru/video/96/e9/96e9cac6c5dc064e95aadcfdf77f697b.jpg",
-            "questionText": "Что на голове у Владимира?",
+            "questionImg": "./src/json/round-2/photo/Poisk_ 300_ques.png",
+            "questionText": "Какой факт о Маше является ложным?",
             "answerOptions": [
               {
-                "answer": "человек",
+                "answer": "ответ",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/Poisk_ 300_answ.png"
               },
               {
-                "answer": "чел",
-                "correctAnswer": false,
-                "answerFoto": "адрес фото 2"
-              },
-              {
-                "answer": "жопошник",
+                "answer": "ответ",
                 "correctAnswer": true,
-                "answerFoto": "адрес фото 3"
+                "answerFoto": "./src/json/round-2/photo/"
               },
               {
-                "answer": "руко-чел",
+                "answer": "ответ",
                 "correctAnswer": false,
-                "answerFoto": "адрес фото 4"
-              }
-            ]
-          },
-          {
-            "difficultiesName": "400",
-            "template": 1,
-            "questionImg": "https://avatars.dzeninfra.ru/get-zen_doc/8074369/pub_64200f63d2d45b2f14eb15cb_64200f705b71617e5f4ff39b/orig",
-            "questionText": "Что на голове у Владимира?",
-            "answerOptions": [
-              {
-                "answer": "дуэт",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/"
               },
               {
-                "answer": "котомяу",
-                "correctAnswer": true,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "караоке",
+                "answer": "ответ",
                 "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
-              },
-              {
-                "answer": "сингл",
-                "correctAnswer": false,
-                "answerFoto": "https://public.superjob.ru/images/profi_articles/image/5172_4218e7837100119978c28d3b558ec597.jpg"
+                "answerFoto": "./src/json/round-2/photo/"
               }
             ]
           }

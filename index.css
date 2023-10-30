@@ -66,6 +66,7 @@
   display: flex;
   flex-direction: column;
   gap: 2vh;
+  z-index: 10;
 }
 
 .navigation button {
@@ -473,6 +474,29 @@
 }
 
 /* ======================================== */
+
+.show-wind-ansver {
+  height: 100vh;
+  /* height: 50vh; */
+  width: 100vw;
+  /* width: 50vw; */
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-wind-ansver img {
+  max-width: 100%; /* Картинка не будет больше ширины родителя */
+  height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+}
+
+/* ======================================== */
+
 .hide {
   display: none;
 }

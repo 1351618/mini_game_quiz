@@ -17,12 +17,12 @@
               {
                 "answer": "3 шляпы",
                 "correctAnswer": false,
-                "answerFoto": "-"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Вши",
                 "correctAnswer": false,
-                "answerFoto": "-"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Распределяющая шляпа",
@@ -39,7 +39,7 @@
               {
                 "answer": "Панамка Грибочка",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Каска Эсимус",
@@ -54,7 +54,7 @@
               {
                 "answer": "Начальная стадия облысения",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               }
             ]
           },
@@ -66,7 +66,7 @@
               {
                 "answer": "Колпаки звездочетов",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Кокошники",
@@ -76,12 +76,12 @@
               {
                 "answer": "Дорожные конусы",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Пилотки из газеты",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               }
             ]
           }
@@ -98,12 +98,12 @@
               {
                 "answer": "Цыплоклещезмей",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Змееклещецып",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Владимир",
@@ -125,12 +125,12 @@
               {
                 "answer": "Причём здесь Майкл Джексон?",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Там должен быть Мацураев",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Саша",
@@ -189,17 +189,17 @@
               {
                 "answer": "СВИНКА",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "СВИНГЕРС",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "СФИНКТЕР",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               }
             ]
           },
@@ -211,17 +211,17 @@
               {
                 "answer": "Маска заинтересованности в процессе",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Тканевые, от следов похмелья",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Результат скрещивания Владимира и Стаса Михайлова",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Лицо Валерия Меладзе",
@@ -238,17 +238,17 @@
               {
                 "answer": "Сделать утреннюю зарядку",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Устроить вкусный завтрак с красивым видом ",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Закопать Маира по шею",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Выложить своими телами слово ПОХУЙ",
@@ -276,17 +276,17 @@
               {
                 "answer": "КоКомар",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Комар и Ко",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Мустик фэктори",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               }
             ]
           },
@@ -298,17 +298,17 @@
               {
                 "answer": "Кусок бетона",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Резиновый дилдо",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "2000 литров швепса",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Сертификат на 10 часов работы водителем на бетономешалке",
@@ -325,12 +325,12 @@
               {
                 "answer": "Никто не круче, чем Комар, \nТут не подточишь носа.\nОн словно Пабло Эскобар,\nС цементом вместо кокса.",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Коровка говорит «Му-му»\nА Котик говорит «Мур-мур»\nСобачка говорит «Гав-гав»\nКомарик говорит «Бонжур».",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               },
               {
                 "answer": "Андрюха учился в МГИМО\nОн не какое-то ЧМО\nАндрей — удалец\nБалагур, весельчак\nНа заводе молодец\nИ в караоке норм поет.",
@@ -340,7 +340,7 @@
               {
                 "answer": "Хороший друг - Комар Андрей\nВесёлый, честный, славный.\nОн самый добрый из людей\nИ на заводе главный.\nОн вежлив, нахер не пошлёт\nИ кто-бы его не бесил\nНе скажет «Рот-наоборот»,\nЛишь: «Я ваш бетон месил».",
                 "correctAnswer": false,
-                "answerFoto": "./src/json/round-1/photo/"
+                "answerFoto": "./src/json/round-1/photo/error.png"
               }
             ]
           }

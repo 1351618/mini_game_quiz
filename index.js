@@ -40,6 +40,7 @@ const guidance = document.getElementById("guidance-01");
 // рендеринг элементов
 const questionImgDiv = document.querySelector(".question__img");
 const questionDivP = document.querySelector(".question-div-p");
+const showWindAnsverDiv = document.querySelector(".show-wind-ansver");
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 // todo переменные
@@ -81,6 +82,7 @@ returnRound_2_Btn.addEventListener("click", () => {
 returnRound_3_Btn.addEventListener("click", () => {
   pageSelection("round-3");
   returnRound_3_Btn.classList.add("hide");
+  showWindAnsverDiv.classList.add("hide");
   stopTimer();
 });
 
@@ -493,7 +495,7 @@ function showingPictures(val) {
   question_Page.appendChild(showImag);
   setTimeout(() => {
     showImag.remove();
-  }, 5000);
+  }, 1000);
 }
 
 // todo раунд 3
@@ -527,12 +529,29 @@ function renderPageRound_3(jesonDataRound3) {
   });
 }
 
+// функция действий при нажатие на стикер
 function hendleClickStik(val, round3PageStic) {
+  // общие для кнопки
   round3PageStic.style.backgroundImage =
     "linear-gradient(56deg, #434242 0%, #040404 100%)";
   round3PageStic.style.pointerEvents = "none";
   round3PageStic.style.color = "#535353";
   console.log(val);
+
+  returnRound_3_Btn.classList.remove("hide");
+
+  let showWindAnsverImg = showWindAnsverDiv.querySelector("img");
+
+  if (showWindAnsverImg) {
+    showWindAnsverImg.remove();
+  }
+
+  showWindAnsverImg = document.createElement("img");
+  showWindAnsverImg.src = val.sticImg;
+
+  showWindAnsverDiv.appendChild(showWindAnsverImg);
+
+  showWindAnsverDiv.classList.remove("hide");
 }
 
 function randomColor() {
