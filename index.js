@@ -37,8 +37,11 @@ const questionTwoOptionsDiv = document.querySelector(
 
 // звуковые эффекты
 const guidance = document.getElementById("guidance-01");
+const guidanceTwo = document.getElementById("guidance-02");
 const rightAnswer = document.getElementById("right-answer");
 const wrongAnswer = document.getElementById("wrong-answer");
+const sticPapers = document.getElementById("stic-papers");
+const mainBtnSound = document.getElementById("main-btn");
 
 // рендеринг элементов
 const questionImgDiv = document.querySelector(".question__img");
@@ -100,6 +103,10 @@ document.addEventListener("keydown", (event) => {
 
 // * кнопка раундов
 btnRounds.forEach((button) => {
+  // ! действие при наведении --- музыка - изменить на звук второго раунда
+  button.addEventListener("mouseenter", () => {
+    soundGuidance(mainBtnSound, 500);
+  });
   button.addEventListener("click", () => {
     // console.log(button.textContent);
     if (button.textContent === "РАУНД 1") {
@@ -314,9 +321,14 @@ function renderPageRound_2(jesonDataRound2) {
       const categoruRound2_button = document.createElement("button");
       categoruRound2_button.classList.add("categoruRound2_button");
       categoruRound2_button.textContent = val.difficultiesName;
+
+      // ! действие при наведении --- музыка - изменить на звук второго раунда
+      categoruRound2_button.addEventListener("mouseenter", () => {
+        soundGuidance(guidanceTwo, 500);
+      });
+
       categoruRound2_button.addEventListener("click", () => {
-        // console.log(val);
-        // ! функция для обработки кнопок
+        //  функция для обработки кнопок
         onClickBtnRound2(val);
       });
 
@@ -531,6 +543,11 @@ function renderPageRound_3(jesonDataRound3) {
     let round3PageStic = document.createElement("button");
     round3PageStic.textContent = val.sticName;
     round3PageStic.style.backgroundColor = randomColor();
+
+    // ! действие при наведении --- музыка - изменить на звук второго раунда
+    round3PageStic.addEventListener("mouseenter", () => {
+      soundGuidance(sticPapers, 500);
+    });
 
     // обработчик событий
     round3PageStic.addEventListener("click", () => {
