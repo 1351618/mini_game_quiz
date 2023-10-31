@@ -354,16 +354,19 @@
   background-color: #75fff7;
   box-shadow: 0px 0px 6px #75fff7, 0px 0px 12px #75fff7, 0px 0px 24px #75fff7, 0px 0px 40px #75fff7;
   border: 2px solid #75fff7;
+  transform: translateY(-8px);
 }
 .round-2 .categoruRound2_div:nth-child(2) .categoruRound2_button:hover {
   background-color: #ffca57;
   box-shadow: 0px 0px 6px #ffca57, 0px 0px 12px #ffca57, 0px 0px 24px #ffca57, 0px 0px 40px #ffca57;
   border: 2px solid #ffca57;
+  transform: translateY(-8px);
 }
 .round-2 .categoruRound2_div:nth-child(3) .categoruRound2_button:hover {
   background-color: #30ff59;
   box-shadow: 0px 0px 6px #30ff59, 0px 0px 12px #30ff59, 0px 0px 24px #30ff59, 0px 0px 40px #30ff59;
   border: 2px solid #30ff59;
+  transform: translateY(-8px);
 }
 
 .categoruRound2_div {
@@ -386,8 +389,8 @@
 
 .categoruRound2_button {
   height: 13vh;
+  font-size: 45px;
   font-weight: bold;
-  font-size: 20px;
   transition: transform 0.3s ease;
 }
 
