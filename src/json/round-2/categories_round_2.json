@@ -326,28 +326,28 @@
             "questionText": "Какой факт о Маше является ложным?",
             "answerOptions": [
               {
-                "answer": "ответ",
+                "answer": "Имеет грамоту за победу в армрестлинге",
                 "correctAnswer": false,
+                "timeShow": 1000,
+                "answerFoto": "./src/json/round-2/photo/error.png"
+              },
+              {
+                "answer": "Любит конину и кумыс",
+                "correctAnswer": true,
                 "timeShow": 5000,
                 "answerFoto": "./src/json/round-2/photo/Poisk_ 300_answ.png"
               },
               {
-                "answer": "ответ",
-                "correctAnswer": true,
-                "timeShow": 5000,
-                "answerFoto": "./src/json/round-2/photo/"
-              },
-              {
-                "answer": "ответ",
+                "answer": "Занималась бальными танцами",
                 "correctAnswer": false,
                 "timeShow": 1000,
-                "answerFoto": "./src/json/round-2/photo/"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               },
               {
-                "answer": "ответ",
+                "answer": "Плавала в открытом океане с китовыми акулами",
                 "correctAnswer": false,
                 "timeShow": 1000,
-                "answerFoto": "./src/json/round-2/photo/"
+                "answerFoto": "./src/json/round-2/photo/error.png"
               }
             ]
           }

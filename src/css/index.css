@@ -454,8 +454,8 @@
 /* ========   round-3  ======================= */
 .round-3 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 1vh;
   padding: 56px;
   justify-items: center;
@@ -464,7 +464,7 @@
   aspect-ratio: 1/1;
   height: 100%;
   text-shadow: 0 0 5px #434343, 0 0 5px #434343, 0 0 5px #434343;
-  font-size: 1.3em;
+  font-size: 4em;
   color: #fbffc4;
   transform: rotate(0deg);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -495,4 +495,11 @@
   max-width: 100%;
   max-height: 100%;
   height: auto;
+}
+.show-wind-ansver p {
+  font-size: 4em;
+  padding: 1vh;
+  text-align: center;
+  color: #fff;
+  white-space: pre-wrap;
 }/*# sourceMappingURL=index.css.map */

@@ -269,6 +269,9 @@ function clickExerciseButton(exerciseButton, val) {
   exerciseButton.addEventListener("click", (event) => {
     // console.log(exerciseButton, val, "{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{");
     templateOne(val, returnRound_1_Btn); //? надо переделать на этот
+
+    exerciseButton.style.backgroundColor = "#575757";
+    exerciseButton.style.pointerEvents = "none";
   });
 }
 
@@ -330,6 +333,9 @@ function renderPageRound_2(jesonDataRound2) {
       categoruRound2_button.addEventListener("click", () => {
         //  функция для обработки кнопок
         onClickBtnRound2(val);
+
+        categoruRound2_button.style.backgroundColor = "#575757";
+        categoruRound2_button.style.pointerEvents = "none";
       });
 
       categoruRound2_div.appendChild(categoruRound2_button);
@@ -505,7 +511,7 @@ function showingVideo(val) {
   question_Page.appendChild(showVideo);
 }
 function showingPictures(val) {
-  console.log("показ картинки......", val.timeShow);
+  // console.log("показ картинки......", val.timeShow);
 
   showWindAnsverDiv.classList.remove("hide");
   let showWindAnsverImg = showWindAnsverDiv.querySelector("img");
@@ -566,20 +572,50 @@ function hendleClickStik(val, round3PageStic) {
     "linear-gradient(56deg, #434242 0%, #040404 100%)";
   round3PageStic.style.pointerEvents = "none";
   round3PageStic.style.color = "#535353";
-  console.log(val);
+  // console.log(val);
 
   returnRound_3_Btn.classList.remove("hide");
 
-  let showWindAnsverImg = showWindAnsverDiv.querySelector("img");
+  val.sticText ? console.log("показ текста") : console.log("показ картинки");
+  val.sticText ? showText(val) : showImg(val);
+}
 
+// ! функция показа текста
+function showText(val) {
+  // удаляем картинку
+  let showWindAnsverImg = showWindAnsverDiv.querySelector("img");
   if (showWindAnsverImg) {
     showWindAnsverImg.remove();
   }
+  // удаляем текст
+  let showWindAnsverP = showWindAnsverDiv.querySelector("p");
+  if (showWindAnsverP) {
+    showWindAnsverP.remove();
+  }
 
+  showWindAnsverP = document.createElement("p");
+  // console.log(val.sticText);
+  showWindAnsverP.textContent = val.sticText;
+  showWindAnsverDiv.appendChild(showWindAnsverP);
+
+  showWindAnsverDiv.classList.remove("hide");
+}
+// ! функция показа картинки
+function showImg(val) {
+  // удаляем текст
+  let showWindAnsverP = showWindAnsverDiv.querySelector("p");
+  if (showWindAnsverP) {
+    showWindAnsverP.remove();
+  }
+  let showWindAnsverImg = showWindAnsverDiv.querySelector("img");
+  if (showWindAnsverImg) {
+    showWindAnsverImg.remove();
+  }
   showWindAnsverImg = document.createElement("img");
   showWindAnsverImg.src = val.sticImg;
 
   showWindAnsverDiv.appendChild(showWindAnsverImg);
+  // showWindAnsverDiv.appendChild(showWindAnsverP);
 
   showWindAnsverDiv.classList.remove("hide");
 }
