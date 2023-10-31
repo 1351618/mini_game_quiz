@@ -472,11 +472,11 @@ function actionsToRespond(val, answerBtn, index) {
     answerBtn.style.backgroundColor = "#00ff00";
     console.log("звук при ответе", "rightAnswer");
     // soundGuidance(воспроизводимый тег , 300);
-    soundGuidance(rightAnswer, 2000); //!========= звук при ответе ===============
+    soundGuidance(rightAnswer, 2000);
   } else {
     answerBtn.style.backgroundColor = "#595959";
 
-    soundGuidance(wrongAnswer, 1000); //!========= звук при ответе ===============
+    soundGuidance(wrongAnswer, 1000);
   }
 
   val.answerVideo ? showingVideo(val) : showingPictures(val);
@@ -544,7 +544,7 @@ function renderPageRound_3(jesonDataRound3) {
     round3PageStic.textContent = val.sticName;
     round3PageStic.style.backgroundColor = randomColor();
 
-    // ! действие при наведении --- музыка - изменить на звук второго раунда
+    // действие при наведении --- музыка - изменить на звук второго раунда
     round3PageStic.addEventListener("mouseenter", () => {
       soundGuidance(sticPapers, 500);
     });
